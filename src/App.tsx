@@ -10,11 +10,11 @@ import {
   Bell,
   Loader2
 } from 'lucide-react';
-import PassportForm from './components/PassportForm';
-import LoginPage from './components/LoginPage';
-import { Button } from './components/ui/button';
-import { cn } from './lib/utils';
-import { AuthProvider, useAuth } from './contexts/AuthContext';
+import PassportForm from '@/src/components/PassportForm';
+import LoginPage from '@/src/components/LoginPage';
+import { Button } from '@/src/components/ui/button';
+import { cn } from '@/src/lib/utils';
+import { AuthProvider, useAuth } from '@/src/contexts/AuthContext';
 
 function AppContent() {
   const { user, loading, signOut } = useAuth();
