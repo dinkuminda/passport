@@ -19,7 +19,7 @@ import {
 } from 'lucide-react';
 import { format } from 'date-fns';
 
-import { Button } from '@/src/components/ui/button';
+import { Button } from './ui/button';
 import {
   Form,
   FormControl,
@@ -28,25 +28,25 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from '@/src/components/ui/form';
-import { Input } from '@/src/components/ui/input';
+} from './ui/form';
+import { Input } from './ui/input';
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from '@/src/components/ui/select';
-import { Calendar } from '@/src/components/ui/calendar';
+} from './ui/select';
+import { Calendar } from './ui/calendar';
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from '@/src/components/ui/popover';
-import { cn } from '@/src/lib/utils';
-import { supabase } from '@/src/lib/supabase';
+} from './ui/popover';
+import { cn } from '../lib/utils';
+import { supabase } from '../lib/supabase';
 import { toast } from 'sonner';
-import { useAuth } from '@/src/contexts/AuthContext';
+import { useAuth } from '../contexts/AuthContext';
 
 const formSchema = z.object({
   first_name: z.string().min(2, 'First name must be at least 2 characters'),
